@@ -33,7 +33,7 @@ export default function Register() {
     }
     console.log("User Info:", userInfo);
     try {
-      const response = await fetch("http://localhost:4001/auth/register", {
+      const response = await fetch("authentication-api3-74qy1kpq9-paras-projects-2003bf37.vercel.app/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
