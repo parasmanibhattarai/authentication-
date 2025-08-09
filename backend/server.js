@@ -2,7 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const AuthRoutes = require('./Routes/AuthRoutes');
-const productsRoutes = require('./Routes/ProductRoutes'); // Uncomment if you have product routes  
+const ProductsRoutes = require('./Routes/ProductRoutes'); // Uncomment if you have product routes  
+
 
 require('dotenv').config();
 require('./Models/db'); // Ensure the User model is imported to establish the connection
@@ -26,7 +27,7 @@ app.use(cors());
 
 // Routes
 app.use('/auth', AuthRoutes);
-app.use('/products',productsRoutes ); // Assuming you have a productsRoutes file for product-related routes
+app.use('/products',ProductsRoutes ); // Assuming you have a productsRoutes file for product-related routes
 
 
 // Start the server
