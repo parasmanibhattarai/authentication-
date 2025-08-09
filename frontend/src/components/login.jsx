@@ -20,7 +20,7 @@ export default function Login() {
 
       console.log("Login Info:", loginInfo);
       try {
-        const response = await fetch("authentication-api3-eq0sq69ld-paras-projects-2003bf37.vercel.app/auth/login", {
+        const response = await fetch("https://authentication-api3.vercel.app/auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
