@@ -44,7 +44,7 @@ function Home() {
     };
   useEffect(() => {
     fetchProduct();
-  } , []);
+  }, []);
 
   return (
     <div>
