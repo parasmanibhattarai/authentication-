@@ -33,7 +33,7 @@ export default function Register() {
     }
     console.log("User Info:", userInfo);
     try {
-      const response = await fetch("https://authentication-api3.vercel.app/auth/register", {
+      const response = await fetch("https://authentication-api-umber.vercel.app/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
